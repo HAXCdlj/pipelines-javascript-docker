@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: haxcdljpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: haxcdljpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: haxcdljpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: haxcdljpipelinesjavascriptdocker 
+          image: whizencontainer.azurecr.io/haxcdljpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
