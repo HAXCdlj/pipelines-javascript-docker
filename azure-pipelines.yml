@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'ee4b0184-bcb6-4e1e-a99b-22c67340fc4e'
-  imageRepository: 'haxcdljpipelinesjavascriptdocker'
+  imageRepository: 'myk8stry'
   containerRegistry: 'whizencontainer.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
